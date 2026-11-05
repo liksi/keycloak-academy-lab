@@ -1,0 +1,65 @@
+dn: ou=people,dc=academy,dc=local
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=academy,dc=local
+objectClass: organizationalUnit
+ou: groups
+
+dn: uid=alice,ou=people,dc=academy,dc=local
+objectClass: inetOrgPerson
+uid: alice
+cn: Alice Martin
+givenName: Alice
+sn: Martin
+mail: alice.martin@academy.local
+userPassword: password
+
+dn: uid=bruno,ou=people,dc=academy,dc=local
+objectClass: inetOrgPerson
+uid: bruno
+cn: Bruno Leroy
+givenName: Bruno
+sn: Leroy
+mail: bruno.leroy@academy.local
+userPassword: password
+
+dn: uid=chloe,ou=people,dc=academy,dc=local
+objectClass: inetOrgPerson
+uid: chloe
+cn: Chloe Bernard
+givenName: Chloe
+sn: Bernard
+mail: chloe.bernard@academy.local
+userPassword: password
+
+dn: uid=david,ou=people,dc=academy,dc=local
+objectClass: inetOrgPerson
+uid: david
+cn: David Petit
+givenName: David
+sn: Petit
+mail: david.petit@academy.local
+userPassword: password
+
+dn: uid=emma,ou=people,dc=academy,dc=local
+objectClass: inetOrgPerson
+uid: emma
+cn: Emma Durand
+givenName: Emma
+sn: Durand
+mail: emma.durand@academy.local
+userPassword: password
+
+dn: cn=agents,ou=groups,dc=academy,dc=local
+objectClass: groupOfNames
+cn: agents
+member: uid=alice,ou=people,dc=academy,dc=local
+member: uid=bruno,ou=people,dc=academy,dc=local
+member: uid=chloe,ou=people,dc=academy,dc=local
+
+dn: cn=administrateurs,ou=groups,dc=academy,dc=local
+objectClass: groupOfNames
+cn: administrateurs
+member: uid=david,ou=people,dc=academy,dc=local
+member: uid=emma,ou=people,dc=academy,dc=local
